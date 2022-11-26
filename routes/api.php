@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\LineMessageController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\Api\LineMessageController;
+use App\Http\Controllers\Api\UserController;
 
 use Illuminate\Support\Facades\Route;
 

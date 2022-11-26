@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
 
 use LINE\LINEBot;
 use LINE\LINEBot\Constant\HTTPHeader;
@@ -20,8 +21,11 @@ class UserController extends Controller
      */
     public function index()
     {
-         $users = User::all();
-         return view('users.index', ['users' => $users]);
+        $users = User::all();
+         return [
+            "status" => "OK",
+            "results" => $users
+            ];
     }
 
     /**
