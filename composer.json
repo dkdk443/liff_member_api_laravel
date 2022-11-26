@@ -7,10 +7,12 @@
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
+        "innocenzi/laravel-vite": "0.2.*",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "linecorp/line-bot-sdk": "^7.5",
+        "livewire/livewire": "^2.10",
         "picqer/php-barcode-generator": "^2.2",
         "tapp/laravel-airtable": "^1.4"
     },
@@ -58,7 +60,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
